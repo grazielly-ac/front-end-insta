@@ -1,51 +1,56 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-
-*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+body{
+    background-color: rgb(250, 250, 250);
+}
 .geral-instagram{
-    border: 1px solid black;
     display: flex;
     width: 100%;
 }
 
 .elementos-instagram{
-    border: 1px solid black;
     display: flex;
     width: 100%;
 }
 
 .phone-form{
-    border: 1px solid black;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 935px;
+    padding-bottom: 32px;
     width: 100%;
     min-height: 618px;
-   
+    margin: 32px auto 0;
 }
 
 .phone{
     display: flex;
     background-image: url('img/celular.png');
-    width: 50%;
+    align-self: center;
     background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
 
 }
 
 .form{
     display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
     flex-direction: column;
     width: 50%;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    margin-top: 12px;
+    color: rgb(38, 38, 38);
+    align-items: stretch;
 }
 
 .form-logo-inputs{
@@ -55,39 +60,63 @@
     margin: 0 0 10px;
     padding: 10px 0;
     border: 1px solid rgb(219, 219, 219);
-
+    display: flex;
+    flex-direction: column;
 
 }
 
 .h1-logo{
-    margin: 12px auto 12px;
-    height: 70px;
-    width: 340px;
-    align-items: center;
-    justify-content: center;
+    margin: 22px auto 12px;
     background-image: url(img/instagram-logo.png);
     background-repeat: no-repeat;
     background-position: center;
+    height: 51px;
+    width: 175px;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
     display: block;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .formulario{
     margin-bottom: 10px;
     max-width: 350px;
     width: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+
 }
 
+.formulario-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 .campos{
     margin-top: 24px;
     flex: 0 0 auto;
+    justify-content: flex-start;
     align-content: stretch;
     align-items: stretch;
+    display: flex;
+    flex-direction: column;
 }
 
 .campos-grupo{
     margin: 0 40px 6px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
 }
 
 .campos-grupo-input{
@@ -95,6 +124,7 @@
     background: rgb(250, 250, 250);
     border: 1px solid rgb(219, 219, 219);
     border-radius: 3px;
+    color: rgb(38, 38, 38);
     display: flex;
     flex-direction: row;
     font-size: 14px;
@@ -110,7 +140,57 @@
     position: relative;
     margin: 0;
     min-width: 0;
+    vertical-align: baseline;
+   
 }
+
+.span-campos-grupo-input{
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    height: 36px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s, -webkit-transform ease-out .1s;
+    user-select: none;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+/*Construção de floating label*/
+
+.floating-label{
+    position: relative;
+    
+}
+
+
+
+/*fim bloco floating label*/
+
+.span-texto-input{
+    color: rgb(142, 142, 142);
+    font-size: 13px;
+    height: 36px;
+    left: 8px;
+    line-height: 34px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s,-webkit-transform ease-out .1s;
+    user-select: none;
+    white-space: nowrap;
+}
+
+
 
 .input-campos-grupo-input{
     font-size: 13px;
@@ -245,7 +325,7 @@ a.reset{
     text-decoration: none;
 }
 
-div.nao-conta{
+.nao-conta{
     background-color: rgb(255,255,255);
     border: 1px solid rgb(219, 219, 219);
     border-radius: 1px;
@@ -256,11 +336,11 @@ div.nao-conta{
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 97.7%;
+    width: 350px;
     
 }
 
-div.nao-conta-interno{
+.nao-conta-interno{
     display: flex;
     color: rgb(142, 142, 142);
     font-weight: 400;
@@ -270,7 +350,7 @@ div.nao-conta-interno{
     
 }
 
-p.paragrafo-nao-conta-interno{
+.paragrafo-nao-conta-interno{
     color: rgb(38, 38, 38);
     font-size: 14px;
     margin: 15px;
@@ -278,13 +358,13 @@ p.paragrafo-nao-conta-interno{
    
 }
 
-p.paragrafo-nao-conta-interno > a{
+.paragrafo-nao-conta-interno > a{
     color: rgb(0 149 246);
     text-decoration: none;
 
 }
 
-span.cadastre-se{
+.cadastre-se{
     color: rgb(0 149 246);
     font-weight: 600;
     font-size: 14px;
@@ -292,10 +372,19 @@ span.cadastre-se{
 }
 
 div.obtenha-app{
+    font: inherit;
+    display: flex;
+    flex-direction: column;
+    border: 0 solid rgb(0 0 0);
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
 
 }
 
-p.paragrafo-obter{
+.paragrafo-obter{
     color: rgb(38, 38, 38);
     font-size: 14px;
     margin: 10px 20px;
@@ -303,7 +392,7 @@ p.paragrafo-obter{
     line-height: 18px;
 }
 
-div.botoes-google-apple{
+.botoes-google-apple{
     flex-direction: row;
     justify-content: center;
     margin: 10px 0;
@@ -315,28 +404,162 @@ div.botoes-google-apple{
     position: relative;
 }
 
-div.botoes-google-apple > a{
+.botoes-google-apple > a{
     margin-right: 8px;
 }
 
-img.img-botoes{
+.img-botoes{
     height: 40px;
 }
 
-.formulario-form{
+.footer-info{
+    background-color: rgb(250, 250, 250);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lista{
+    margin-bottom: 52px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lista-configurar{
+    margin-top: 24px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
+    position: relative;
 }
 
-.footer-info{
-    border: 1px solid black;
+.footer-lista-interna{
+    flex-wrap: wrap;
+    flex: 0 0 auto;
     display: flex;
-    width: 100%;
-    
-    
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    border: 0 solid rgb(0 0 0);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.item-descricao{
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    border: 0 solid rgb(0 0 0);
+    flex-direction: column;
+
+}
+
+.item-descricao > a, a:visited{
+    color: rgb(0, 55, 107);
+    text-decoration: none;
+}
+
+.item-descricao-opcao{
+    display: block;
+    color: rgb(142, 142, 142);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -2px 0 -3px;
+}
+
+.footer-copyright{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    border: 0 solid rgb(0 0 0);
+    display: flex;
+
+}
+
+.idioma{
+    display: block;
+    color: rgb(38, 38, 38);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -2px 0 -3px;
+}
+
+.span-idioma{
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.div-idioma{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div-idioma-interno{
+    margin-left: 4px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.selecionar-idioma{
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;    
+}
+
+.facebook-inst{
+    margin-left: 16px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.copyright{
+    display: block;
+    color: rgb(142, 142, 142);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -2px 0 -3px;
+    align-items: stretch;
 }
