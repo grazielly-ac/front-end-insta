@@ -22,4 +22,4 @@ Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation
 
 Imagem da página desenvolvida
 
-![Instagram atual](../img/pagina-desenvolvida.png)
+![Instagram atual](img/pagina-desenvolvida.png)
