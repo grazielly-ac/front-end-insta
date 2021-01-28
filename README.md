@@ -18,3 +18,8 @@ Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation
 * [Git](https://git-scm.com/)
 * [GitHub Docs](https://docs.github.com/pt/github/writing-on-github/basic-writing-and-formatting-syntax#links)
 
+## Página desenvolvida ##
+
+Imagem da página desenvolvida
+
+![Instagram atual](../img/pagina-desenvolvida.png)
