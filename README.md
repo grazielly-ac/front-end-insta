@@ -2,7 +2,7 @@
 
 ## Aspectos ##
 
-Produção parcial do Front-End do Instagram para aprimorar os estudos na área de programação.
+Criada página do Instagram na parte de Front-End para implementar conhecimento a respeito das tecnologias. 
 
 ### Tecnologias ###
 
@@ -23,3 +23,5 @@ Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation
 Imagem da página desenvolvida
 
 ![Instagram atual](img/pagina-desenvolvida.png)
+
+* [grazielly-ac-instagram](https://grazielly-ac.github.io/front-end-insta/)
