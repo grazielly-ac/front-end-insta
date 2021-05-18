@@ -1,0 +1,397 @@
+/*-------------------------------*\
+            GERAL
+\*-------------------------------*/
+
+* {
+   
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(240, 240, 240, 0.3);
+    
+}
+
+/*-------------------------------*\
+\*-------------------------------*/
+
+.main {
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    width: 935px;
+    height: auto;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------*\
+        MAIN-PHONE
+\*-------------------------------*/
+
+.main__backphone {
+    width: 100%;
+    height: 618px;
+
+    background-image: url('../img/celular.png');
+    background-repeat: no-repeat;
+    background-size: 454px 618px;
+    background-position: 44px 0;
+}
+
+/*-------------------------------*\
+        MAIN-FORMULÁRIO-INICIO
+\*-------------------------------*/
+
+.main-form {
+    flex-direction: column;
+
+    width: 350px;
+    height: 606px;
+    margin-top: 54px;
+    margin-left: 25px;
+    
+}
+
+.main-form__layout {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--borda-form);
+
+    background-color: var(--branco);
+}
+
+.main-form__logo {
+    width: 175px;
+    height: 51px;
+    margin: 22px 86.5px 12px;
+
+    background-image: url('../img/instagram-logo.png');
+    background-repeat: no-repeat;
+    background-size: 175px 51px;
+}
+
+/*-------------------------------*\
+        MAIN-FORMULÁRIO-MEIO
+\*-------------------------------*/
+
+.main-form__formulario {
+    flex-direction: column;
+    
+    display: flex;
+    margin: 20px 35px;
+    padding: 5px;
+    
+    background-color: var(--branco);
+    
+    font-size: 12px;
+}
+
+.main-form__inputconf {
+    height: 40px !important;
+    margin-bottom: 7px;
+
+    background-color: rgba(240, 240, 240, 0.3);
+}
+
+.main-form__inputconf:focus {
+    top: -5px !important;
+
+    height: 40px;
+    margin-bottom: 10px;
+    border-color: #8e8e8e;
+
+    outline: 0;
+    box-shadow: 0 0 0 0;
+
+}
+
+.main-form__floating-label {
+    top: -5px !important;
+
+    color: #8e8e8e;
+}
+
+.main-form__btn {
+    width: 100%;
+    margin: 0 0 8px 0;
+}
+
+.main-form__btnentrar {
+    width: inherit;
+    padding: 5px 90px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: none;
+
+    background-color: var(--botao-entrar);
+    color: var(--branco);
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*-------------------------------*\
+        MAIN-FORMULÁRIO-LINHA
+\*-------------------------------*/
+
+.main__oulinha {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    margin: 5px 0;
+}
+
+.main__linha {
+    width: 38%;
+    height: 1px;
+   
+    background-color: rgb(219, 219, 219);
+}
+
+.main__ou {
+    justify-content: center;
+
+    display: flex;
+    margin: 10px;
+    margin-bottom: 10px;
+    
+    color: var(--ou);
+
+    font-weight: 600;
+    font-size: 14px;
+    
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+/*-------------------------------*\
+        MAIN-FORMULÁRIO-FACEBOOK
+\*-------------------------------*/
+
+.main__facebook {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    width: 268px;
+    height: 25px;
+    margin: 10px 40px;
+}
+
+.main__facebookbtn {
+    border: none;
+
+    background-color: transparent;
+}
+
+.main__facebookicon {
+    color: var(--facebook);
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.main__facebookfrase {
+    margin: 0 7px;
+
+    color: var(--facebook);
+
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+/*-------------------------------*\
+    MAIN-FORMULÁRIO-RESETSENHA
+\*-------------------------------*/
+
+.main-layout__reset {
+    margin-top: 10px;
+    
+}
+
+.main__reset {
+    justify-content: center;
+
+    display: flex;
+
+    color: rgb(0, 55, 107);
+    
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+       
+    line-height: 14px;
+}
+
+.main__reset:hover {
+    color: rgb(0, 55, 107);
+}
+
+/*-------------------------------*\
+        MAIN-FORMULÁRIO-CONTA
+\*-------------------------------*/
+
+.main-conta {
+    border: 1px solid var(--borda-form);
+    padding: 5px 10px;
+
+    background-color: var(--branco);
+}
+
+.main-conta__naotemconta {
+    margin: 20px;
+    
+    color: var(--nao-conta0);
+    
+    font-size: 14px;
+    text-align: center;
+    
+    line-height: 18px;
+}
+
+/*-------------------------------*\
+    MAIN-FORMULÁRIO-CADASTRO
+\*-------------------------------*/
+
+.main-conta__cadastre {
+    color: var(--cadastre);
+    
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    
+    line-height: 18px;
+}
+
+.main-conta__cadastre:hover {
+    color: var(--cadastre);
+}
+
+/*-------------------------------*\
+    MAIN-FORMULÁRIO-OBTER APP
+\*-------------------------------*/
+
+.main-obter {
+    flex-direction: column;
+       
+    display: flex;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    line-height: 18px;
+}
+
+.main-obter__paragrafo {
+    margin: 25px 20px;
+}
+
+.main-obter-layoutesq__img {
+    display: flex;  
+    padding-left: 32px;
+ 
+}
+
+.main-obter-layoutdir__img {
+    display: flex;
+  
+}
+
+.main-obter__img {
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------------------*\
+        FOOTER
+\*-------------------------------*/
+
+.footer {
+    /*flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;*/
+
+    /*display: flex;*/
+    width: 100%;
+   
+}
+
+
+.footer-menutop-item__cimaebaixo {
+    display: flex;
+    width: auto;
+    margin: 0 8px 12px 8px;
+    padding: 0;
+}
+
+.footer-menutop-link__cimaebaixo {
+    color: rgb(142, 142, 142);
+    
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    
+    line-height: 14px;
+}
+
+.footer-menutop-link__cimaebaixo:hover {
+    color: rgb(142, 142, 142);
+}
+
+/*MENU BOTTOM*/
+
+.footer-menubottom {
+    
+  
+    margin-bottom: 52px;
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    font-weight: 400;
+   
+}
+
+/*MENU BOTTOM IDIOMAS*/
+
+.footer-menubottom-idiomas {
+   justify-content: flex-end;
+ 
+
+}
+
+.footer-menubottom-idiomas__select {
+    display: flex;
+    border: none;
+    font-size: 12px;
+    padding: 6px 15px 6px 10px;
+    width: 150px;
+    height: 30px;
+    color: rgb(142, 142, 142);
+}
+
+.footer-menubottom-idiomas__select:focus {
+    box-shadow: 0 0 0;
+}
+
+/*MENU BOTTOM INSTAFACEBOOK*/
+
+.footer-menubottom-instafacebook {
+   padding-left: 5px;
+       
+}
+
+.footer-menubottom-instafacebook__frase {
+    align-items: center;
+
+    width: 100%;
+    
+    font-size: 11.5px;
+}

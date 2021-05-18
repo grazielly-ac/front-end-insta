@@ -1,25 +1,29 @@
-# Instragram - Front-End #
+# Instragram | Front-End #
+>[grazielly-ac-instagram](https://grazielly-ac.github.io/front-end-insta/)
 
 ## Aspectos ##
 
-Produção parcial do Front-End do Instagram para aprimorar os estudos na área de programação.
+Página desenvolvida inicialmente com o uso de HTML e CSS. Atualizada com funcionalidades do Bootstrap 5.
 
 ### Tecnologias ###
 
 >HTML
 >CSS
+>BootStrap
+
+### IDE ###
+* [VSCode](https://code.visualstudio.com/download)
 
 :computer:   :computer:
 ## Base de estudo ##
 
-Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation One*. O curso foi base para buscar fontes mais avançadas e maiores conteúdos para desenvolver a página do Instagram de maneira diferente e parecida com a atual.
+Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation One*. O curso foi base para buscar fontes mais avançadas e maiores conteúdos para desenvolver a página do Instagram de maneira diferente com a do curso e parecida com a própria página atual.
 
-* [W3Schools](https://www.w3schools.com/)
+* [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Git](https://git-scm.com/)
 * [GitHub Docs](https://docs.github.com/pt/github/writing-on-github/basic-writing-and-formatting-syntax#links)
 
 ## Página desenvolvida ##
 
-Imagem da página desenvolvida
+>[grazielly-ac-instagram](https://grazielly-ac.github.io/front-end-insta/)
 
-![Instagram atual](img/pagina-desenvolvida.png)
