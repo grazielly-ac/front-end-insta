@@ -1,6 +1,3 @@
-# Instragram | Front-End #
->[grazielly-ac-instagram](https://grazielly-ac.github.io/front-end-insta/)
-
 
 ## Aspectos ##
 
@@ -24,7 +21,5 @@ Realizado curso de desenvolvimento **HTML Web Developer** da *Digital Innovation
 * [Git](https://git-scm.com/)
 * [GitHub Docs](https://docs.github.com/pt/github/writing-on-github/basic-writing-and-formatting-syntax#links)
 
-## Página desenvolvida ##
 
->[grazielly-ac-instagram](https://grazielly-ac.github.io/front-end-insta/)
 
