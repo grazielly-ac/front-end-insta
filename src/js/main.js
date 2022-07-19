@@ -26,6 +26,4 @@ document.body.append(main,footer);
 const showImages = new Image();
 showImages.slideDisplay();
 
-
-
 /*FIM FOOTER*/ 
