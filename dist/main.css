@@ -1,0 +1,1547 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/styles.scss ***!
+  \***************************************************************************************************************/
+@charset "UTF-8";
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/**
+ * Reset Mixing
+ * ================================================== */
+/**
+ * Disable Animation
+ */
+/**
+ * Disable animation depends on Browser or Operation System configuration
+ */
+/**
+ * Accessability. Black and White Mode
+ */
+/**
+ * Accessability. Inverse Mode
+ */
+/**
+ * Meter reset
+ */
+/**
+ * Modern CSS Reset Tweaks
+ * ================================================== */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+/* Box sizing normalization */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* Elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/**
+ * CSS Reset Tweaks
+ *
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0-modified | 20110126
+ * License: none (public domain)
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/**
+ * Input Reset
+ */
+input:required,
+input {
+  box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input:focus {
+  outline: none;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+}
+
+/* Make pictures easier to work with */
+picture {
+  display: inline-block;
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+[disabled] {
+  pointer-events: none;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ */
+input[type=checkbox],
+input[type=radio] {
+  padding: 0;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  background: transparent;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: 0;
+}
+
+/**
+ * Based on normalize.css v8.0.1
+ * github.com/necolas/normalize.css
+ */
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  background: #000;
+  border: 0;
+  height: 1px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  page-break-after: always;
+  width: 100%;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 100%;
+}
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+/**
+  * Add the correct font size in all browsers.
+  */
+small {
+  font-size: 75%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -5px;
+}
+
+sup {
+  top: -5px;
+}
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+  outline: 0;
+}
+
+legend {
+  color: inherit;
+  white-space: normal;
+  display: block;
+  border: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+fieldset {
+  min-width: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: block;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Misc
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  src: url(a732a12eb07742232407.ttf) format("ttf"), url(6d6cfbd47272940b6071.woff) format("woff"), url(79bf1de4d108a0b67d85.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  src: url(333da16a3f3cc391d087.ttf) format("ttf"), url(228b5d901f75b361f889.woff) format("woff"), url(9757968771f3cac6b3c9.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  src: url(fc2b5060f7accec5cf74.ttf) format("ttf"), url(4a463af37c9eaeca8205.woff) format("woff"), url(c33a61ed34dc5db633c6.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  src: url(7c8d04cd831df3033c8a.ttf) format("ttf"), url(2d25388525fab3c0aeff.woff) format("woff"), url(c968c2653e277f3a527f.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  src: url(f80816a5455d171f948d.ttf) format("ttf"), url(1bf7732b4c45a0d8a365.woff) format("woff"), url(e5fec641b54341c99de8.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  src: url(cf56c1b149d0a5e8d7c6.ttf) format("ttf"), url(5eb269d1ec5d19d80f22.woff) format("woff"), url(96c74d1bc37b34e1fbaf.woff2) format("woff2");
+}
+.celular {
+  display: flex;
+  flex-basis: 38.032em;
+  align-items: stretch;
+  align-self: center;
+  height: 58.115em;
+  margin-bottom: 1.2em;
+  margin-right: 3.2em;
+  background-image: url(24b5edd345b02fe6a05b.png);
+  background-size: 46.832em 63.415em;
+  background-position: -4.6em 0;
+}
+.celular__lista {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-shrink: 0;
+  margin: 2.7em 0 0 11.3em;
+  line-height: 1.8em;
+  vertical-align: baseline;
+}
+.celular .slide {
+  display: none;
+}
+.celular .slide.active {
+  display: block;
+}
+.celular .slide-config {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 25em;
+  height: 53.884em;
+  animation-name: fade;
+  animation-duration: 6s;
+}
+
+@media screen and (max-width: 875px) {
+  .celular {
+    display: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-top: 1.2em;
+  max-width: 35em;
+  color: rgb(38, 38, 38);
+  line-height: 1.8em;
+  vertical-align: baseline;
+  /*------------------*\
+            LOGIN
+    \*------------------*/
+  /*--------------------------*\
+           CADASTRO
+  \*--------------------------*/
+  /*--------------------------*\
+           DOWNLOAD
+  \*--------------------------*/
+}
+.formulario .login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1px;
+  padding: 1em 0;
+  /*-----------------*\
+      LOGIN LOGO
+  \*-----------------*/
+  /*-----------------*\
+      LOGIN CAMPOS
+  \*-----------------*/
+}
+.formulario .login__borda {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+  border: 0.1em solid rgb(219, 219, 219);
+  border-radius: 1px;
+  padding: 1em 0;
+  background-color: rgb(255, 255, 255);
+}
+.formulario .login__logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 0 0 auto;
+  margin-top: 3.6em;
+  margin-bottom: 1.2em;
+  border: 0 solid #000;
+  line-height: 1.8em;
+  vertical-align: baseline;
+}
+.formulario .login__campos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 35em;
+  margin-bottom: 1em;
+  line-height: 1.8em;
+  color: rgb(38, 38, 38);
+}
+.formulario .login__campos .campos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  /*------------------*\
+       LABEL E INPUT
+  \*------------------*/
+  /*------------------*\
+      LINHA OU LINHA
+  \*------------------*/
+  /*------------------*\
+         FACEBOOK
+  \*------------------*/
+  /*------------------*\
+        RESET SENHA
+  \*------------------*/
+}
+.formulario .login__campos .campos__preencher {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-top: 2.4em;
+}
+.formulario .login__campos .campos__preencher-usuario-senha {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 4em 0.6em 4em;
+}
+.formulario .login__campos .campos__botao {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0.572em 2.86em;
+  font-size: 0.875rem;
+}
+.formulario .login__campos .campos__botao-config {
+  display: block;
+  width: 100%;
+  padding: 0.358em 0.643em;
+  border: 1px solid transparent;
+  border-radius: 0.286em;
+  background-color: rgba(0, 149, 246, 0.3);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.286em;
+  cursor: pointer;
+  opacity: 1;
+}
+.formulario .login__campos .campos .label-input {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 1.3em;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 0.3em;
+  color: rgb(38, 38, 38);
+  background: rgb(255, 255, 255);
+  background-attachment: scroll;
+  background-size: auto;
+}
+.formulario .login__campos .campos .label-input__input {
+  flex: 1 0 auto;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  margin-top: 0.2em;
+  padding-left: 1em;
+  font-size: 0.875rem;
+  color: rgb(38, 38, 38);
+  transition: all 0.3s ease-out;
+}
+.formulario .login__campos .campos .label-input__input:required:invalid + .label-input__label {
+  color: rgba(255, 0, 0, 0.623);
+  font-size: 0.75rem;
+}
+.formulario .login__campos .campos .label-input__input::placeholder {
+  color: transparent;
+}
+.formulario .login__campos .campos .label-input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2em;
+  margin-top: 0.8em;
+  padding-left: 1em;
+  font-size: 0.8125rem;
+  transition: all 0.3s ease-out; /*causar alteração de estado amigavel de bottom para top*/
+  pointer-events: none; /*usado para não reagir ao evento de clique, se remover não funciona o float corretamente*/
+}
+.formulario .login__campos .campos .label-input__input:focus + .label-input__label, .formulario .login__campos .campos .label-input__input:not(:placeholder-shown) + .label-input__label {
+  margin-top: 0;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 0.75rem;
+}
+.formulario .login__campos .campos .label-input-detalhe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.8em;
+  vertical-align: middle;
+}
+.formulario .login__campos .campos .alternativa {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 3em 1em;
+  font-size: 0.625rem;
+}
+.formulario .login__campos .campos .alternativa__linha {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 0.05em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: rgb(219, 219, 219);
+  font-size: 0.875rem;
+}
+.formulario .login__campos .campos .alternativa__ou {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 0.8em;
+  color: rgb(142, 142, 142);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+.formulario .login__campos .campos .facebook {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0.8em 4em;
+  font-size: 0.625rem;
+}
+.formulario .login__campos .campos .facebook__botao {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  color: rgb(0, 149, 246);
+  line-height: 1.8em;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  appearance: none;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .facebook__icone {
+  position: relative;
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+  color: rgb(56, 81, 133);
+  text-align: center;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .facebook__icone-icone {
+  font-size: 1.14375rem;
+}
+.formulario .login__campos .campos .facebook__entrar {
+  color: rgb(57, 64, 112);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .reset-senha {
+  margin-top: 0.7em;
+  color: rgb(57, 64, 112);
+  font-size: 0.875rem;
+  line-height: 1.6em;
+  text-align: center;
+  text-decoration: none;
+}
+.formulario .cadastro {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 0.1em solid rgb(219, 219, 219);
+  border-radius: 0.1em;
+  margin: 0 0 1em;
+  padding: 1em 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.625rem;
+}
+.formulario .cadastro__login-container {
+  display: flex;
+  align-self: stretch;
+  color: rgb(142, 142, 142);
+  font-weight: 400;
+}
+.formulario .cadastro__login-paragrafo {
+  margin: 0.5em;
+  color: rgb(38, 38, 38);
+  font-size: 0.875rem;
+  text-align: center;
+}
+.formulario .cadastro__login-link {
+  margin-left: 0.2em;
+  color: rgb(0, 149, 246);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formulario .download {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+.formulario .download__paragrafo {
+  margin: 1rem 2rem 1rem 2rem;
+  color: rgb(38, 38, 38);
+  font-size: 1.4em;
+  text-align: center;
+}
+.formulario .download__sistemaop {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.8em;
+}
+.formulario .download__sistemaop-app {
+  margin-right: 0.8em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formulario .download__sistemaop-app:last-child {
+  margin-right: 0;
+}
+.formulario .download__sistemaop-img {
+  height: 4em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 0 0 auto;
+  margin-bottom: 5.2em;
+}
+.footer-menu__cima {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 2.4em;
+  flex: 0 0 auto;
+}
+.footer-menu__cima-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 0.5em;
+}
+.footer-menu__cima-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0.8em 1.2em 0.8em;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footer-menu__cima-link {
+  color: rgb(142, 142, 142);
+  text-decoration: none;
+}
+.footer-menu__cima-link:visited {
+  color: rgb(142, 142, 142);
+  text-decoration: none;
+}
+.footer-menu__baixo {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2em 0;
+  line-height: 1.8em;
+}
+.footer-menu__baixo-idioma {
+  display: block;
+  flex-direction: column;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.footer-menu__baixo-copyright {
+  display: block;
+  color: rgb(142, 142, 142);
+  font-size: 0.75rem;
+  line-height: 1.6em;
+}
+.footer .idioma {
+  position: relative;
+  display: inline-block;
+  color: rgb(142, 142, 142);
+  font-weight: 400;
+  vertical-align: top;
+  cursor: pointer;
+}
+.footer .idioma__texto {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  vertical-align: baseline;
+}
+.footer .idioma__texto-flag {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 0.5em;
+}
+.footer .idioma__texto-config {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.footer .idioma__icon {
+  position: relative;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.footer .idioma__icon:not(:root) {
+  overflow: hidden;
+}
+.footer .idioma__opcoes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(136, 136, 211);
+  font-family: "Roboto-Regular";
+  font-size: 0.625rem;
+  background-color: rgb(250, 250, 250);
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-shrink: 0;
+  flex-grow: 1;
+  width: 100%;
+  line-height: 1.8em;
+}
+.principal .instagram {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  max-width: 93.5em;
+  padding-bottom: 3.2em;
+  margin: 3em auto 0;
+}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_formulario.scss ***!
+  \********************************************************************************************************************/
+@charset "UTF-8";
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-top: 1.2em;
+  max-width: 35em;
+  color: rgb(38, 38, 38);
+  line-height: 1.8em;
+  vertical-align: baseline;
+  /*------------------*\
+            LOGIN
+    \*------------------*/
+  /*--------------------------*\
+           CADASTRO
+  \*--------------------------*/
+  /*--------------------------*\
+           DOWNLOAD
+  \*--------------------------*/
+}
+.formulario .login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1px;
+  padding: 1em 0;
+  /*-----------------*\
+      LOGIN LOGO
+  \*-----------------*/
+  /*-----------------*\
+      LOGIN CAMPOS
+  \*-----------------*/
+}
+.formulario .login__borda {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+  border: 0.1em solid rgb(219, 219, 219);
+  border-radius: 1px;
+  padding: 1em 0;
+  background-color: rgb(255, 255, 255);
+}
+.formulario .login__logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 0 0 auto;
+  margin-top: 3.6em;
+  margin-bottom: 1.2em;
+  border: 0 solid #000;
+  line-height: 1.8em;
+  vertical-align: baseline;
+}
+.formulario .login__campos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 35em;
+  margin-bottom: 1em;
+  line-height: 1.8em;
+  color: rgb(38, 38, 38);
+}
+.formulario .login__campos .campos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  /*------------------*\
+       LABEL E INPUT
+  \*------------------*/
+  /*------------------*\
+      LINHA OU LINHA
+  \*------------------*/
+  /*------------------*\
+         FACEBOOK
+  \*------------------*/
+  /*------------------*\
+        RESET SENHA
+  \*------------------*/
+}
+.formulario .login__campos .campos__preencher {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-top: 2.4em;
+}
+.formulario .login__campos .campos__preencher-usuario-senha {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 4em 0.6em 4em;
+}
+.formulario .login__campos .campos__botao {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0.572em 2.86em;
+  font-size: 0.875rem;
+}
+.formulario .login__campos .campos__botao-config {
+  display: block;
+  width: 100%;
+  padding: 0.358em 0.643em;
+  border: 1px solid transparent;
+  border-radius: 0.286em;
+  background-color: rgba(0, 149, 246, 0.3);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.286em;
+  cursor: pointer;
+  opacity: 1;
+}
+.formulario .login__campos .campos .label-input {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 1.3em;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 0.3em;
+  color: rgb(38, 38, 38);
+  background: rgb(255, 255, 255);
+  background-attachment: scroll;
+  background-size: auto;
+}
+.formulario .login__campos .campos .label-input__input {
+  flex: 1 0 auto;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  margin-top: 0.2em;
+  padding-left: 1em;
+  font-size: 0.875rem;
+  color: rgb(38, 38, 38);
+  transition: all 0.3s ease-out;
+}
+.formulario .login__campos .campos .label-input__input:required:invalid + .label-input__label {
+  color: rgba(255, 0, 0, 0.623);
+  font-size: 0.75rem;
+}
+.formulario .login__campos .campos .label-input__input::placeholder {
+  color: transparent;
+}
+.formulario .login__campos .campos .label-input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2em;
+  margin-top: 0.8em;
+  padding-left: 1em;
+  font-size: 0.8125rem;
+  transition: all 0.3s ease-out; /*causar alteração de estado amigavel de bottom para top*/
+  pointer-events: none; /*usado para não reagir ao evento de clique, se remover não funciona o float corretamente*/
+}
+.formulario .login__campos .campos .label-input__input:focus + .label-input__label, .formulario .login__campos .campos .label-input__input:not(:placeholder-shown) + .label-input__label {
+  margin-top: 0;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 0.75rem;
+}
+.formulario .login__campos .campos .label-input-detalhe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.8em;
+  vertical-align: middle;
+}
+.formulario .login__campos .campos .alternativa {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 3em 1em;
+  font-size: 0.625rem;
+}
+.formulario .login__campos .campos .alternativa__linha {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 0.05em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: rgb(219, 219, 219);
+  font-size: 0.875rem;
+}
+.formulario .login__campos .campos .alternativa__ou {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 0.8em;
+  color: rgb(142, 142, 142);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+.formulario .login__campos .campos .facebook {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0.8em 4em;
+  font-size: 0.625rem;
+}
+.formulario .login__campos .campos .facebook__botao {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  color: rgb(0, 149, 246);
+  line-height: 1.8em;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  appearance: none;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .facebook__icone {
+  position: relative;
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+  color: rgb(56, 81, 133);
+  text-align: center;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .facebook__icone-icone {
+  font-size: 1.14375rem;
+}
+.formulario .login__campos .campos .facebook__entrar {
+  color: rgb(57, 64, 112);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.formulario .login__campos .campos .reset-senha {
+  margin-top: 0.7em;
+  color: rgb(57, 64, 112);
+  font-size: 0.875rem;
+  line-height: 1.6em;
+  text-align: center;
+  text-decoration: none;
+}
+.formulario .cadastro {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 0.1em solid rgb(219, 219, 219);
+  border-radius: 0.1em;
+  margin: 0 0 1em;
+  padding: 1em 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.625rem;
+}
+.formulario .cadastro__login-container {
+  display: flex;
+  align-self: stretch;
+  color: rgb(142, 142, 142);
+  font-weight: 400;
+}
+.formulario .cadastro__login-paragrafo {
+  margin: 0.5em;
+  color: rgb(38, 38, 38);
+  font-size: 0.875rem;
+  text-align: center;
+}
+.formulario .cadastro__login-link {
+  margin-left: 0.2em;
+  color: rgb(0, 149, 246);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formulario .download {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+.formulario .download__paragrafo {
+  margin: 1rem 2rem 1rem 2rem;
+  color: rgb(38, 38, 38);
+  font-size: 1.4em;
+  text-align: center;
+}
+.formulario .download__sistemaop {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.8em;
+}
+.formulario .download__sistemaop-app {
+  margin-right: 0.8em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formulario .download__sistemaop-app:last-child {
+  margin-right: 0;
+}
+.formulario .download__sistemaop-img {
+  height: 4em;
+}

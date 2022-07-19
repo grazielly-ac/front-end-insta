@@ -1,0 +1,35 @@
+@import './customize';
+@import './node_modules/scss-reset/reset';
+@import './fonts';
+@import './celular';
+@import './formulario';
+@import './footer';
+
+$bgcolor: rgb(136, 136, 211);
+
+body{
+    background-color: $bgcolor;
+    font-family: 'Roboto-Regular';
+    @include fontSize(1);
+    background-color: rgb(250,250,250);
+}
+
+.principal{
+    @include displayFlex(column, center, center, stretch);
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 100%;
+
+    line-height: 1.8em;
+
+    .instagram{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-grow: 1;
+        max-width: 93.5em;
+        padding-bottom: 3.2em;
+        margin: 3em auto 0;
+       
+    }
+}

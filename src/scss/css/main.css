@@ -39,6 +39,10 @@ html{
    
 }
 
+/*-------------------------------*\
+               CELULAR
+\*-------------------------------*/
+
 .celular{
     display: flex;
     flex-basis: 38.032em;
@@ -67,8 +71,8 @@ html{
 
     display: flex;
     align-items: stretch;
-    flex-shrink: 0;
     flex-direction: column;
+    flex-shrink: 0;
     margin: 2.7em 0 0 11.3em ;
 
     line-height: 1.8em;
@@ -91,6 +95,10 @@ html{
     from {opacity: .4;}
     to {opacity: 1;}
 }
+
+/*-------------------------------*\
+               FORMULÁRIO
+\*-------------------------------*/
 
 .formulario{
     position: relative;
@@ -133,9 +141,9 @@ html{
 .login-borda{
   
     display: flex;
-    width: 100%;
     align-items: center;
     flex-direction: column;
+    width: 100%;
     flex-shrink: 0;
     border: 0.1em solid rgba(219,219,219,1);    
     border-radius: 1px;
@@ -163,9 +171,6 @@ html{
     vertical-align: baseline;
 }
 
-.login__logo-img {
-   
-}
 
 .login__campos{
 
@@ -187,8 +192,8 @@ html{
 
 .campos__preencher{
     display: flex;
-    flex-basis: auto;
     flex-direction: column;
+    flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     justify-content: flex-start;
@@ -663,4 +668,8 @@ html{
     line-height: 1.6rem;
 }
 
-
+@media(max-width: 875px){
+    .celular{
+        display: none;
+    }
+}

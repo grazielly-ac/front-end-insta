@@ -1,0 +1,53 @@
+.celular{
+    display: flex;
+    flex-basis: 38.032em;
+    align-items: stretch;
+    align-self: center;
+    height: 58.115em;
+    margin-bottom: 1.2em;
+    margin-right: 3.2em;
+
+    background-image: url('../assets/img/celular.png');
+    background-size: 46.832em 63.415em;
+    background-position: -4.6em 0;
+
+   
+    
+    &__lista{
+        position: relative;
+
+        @include displayFlex(column, center, center, stretch);    
+        flex-shrink: 0;
+        margin: 2.7em 0 0 11.3em ;
+    
+        line-height: 1.8em;
+        vertical-align: baseline;
+    }
+
+    .slide{
+        display: none;
+    }
+
+    .slide.active{
+        
+        display: block;
+    }
+
+    .slide-config{
+        position: relative;
+        top: 0;
+        left: 0;
+    
+        width: 25em;
+        height: 53.884em;
+        
+        animation-name: fade;
+        animation-duration: 6s;
+    }
+}
+
+@include media-md{
+    .celular{
+        display: none;
+    }
+}

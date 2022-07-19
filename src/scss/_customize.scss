@@ -1,0 +1,38 @@
+@mixin fontSize($sizeValue) {
+    $fontSize: 0.625rem;
+
+    font-size: $fontSize * $sizeValue;
+}
+
+@mixin displayFlex($direction, $alignContent, $justify, $alignItems){
+    display: flex;
+    flex-direction: $direction;
+    align-content: $alignContent;
+    justify-content: $justify;
+    align-items: $alignItems;
+
+}
+
+
+@mixin sizeEquals($property, $top-bottom, $left-right){
+    
+    $property: $top-bottom rem, $left-right rem;
+    
+}
+
+@mixin sizeNotEquals($top, $bottom, $left, $right){
+    
+    $property: $top rem, $bottom rem, $left rem, $right rem;
+    
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@mixin media-md {
+    @media screen and (max-width: 875px){
+        @content;
+    }
+}

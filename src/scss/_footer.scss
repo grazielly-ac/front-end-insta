@@ -1,0 +1,136 @@
+.footer{
+    @include displayFlex(column, center, center, stretch);
+
+    width: 100%;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+
+    &-menu{
+    @include displayFlex(column, center, flex-start, stretch);
+
+    flex: 0 0 auto;
+    margin-bottom: 5.2em;
+
+        
+
+        &__cima{
+            @include displayFlex(column, stretch, flex-start, stretch);
+            margin-top: 2.4em;
+            flex: 0 0 auto;
+
+            &-conteudo{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            
+                line-height: 0.5em;
+            }
+
+            &-item{
+                display: flex;
+                align-items: center;
+                margin: 0 0.8em 1.2em 0.8em;
+            
+                font-size: 1.2em;
+                line-height: 1em;
+                font-weight: 400;
+            
+                cursor: pointer;
+            }
+
+            &-link{
+                color: rgba(142,142,142,1);
+                text-decoration: none;
+            }
+            &-link:visited{
+                color: rgba(142,142,142,1);
+                text-decoration: none;
+            }
+        }
+
+        &__baixo{
+            @include displayFlex(row, stretch, center, center);
+            margin: 1.2em 0;
+
+            line-height: 1.8em;
+        
+            &-idioma{
+                display: block;
+                flex-direction: column;
+                margin-right: 0.5em;
+
+                font-size: 1.2em;
+                line-height: 1.6em;
+              
+            }
+        }
+
+        &__baixo-copyright{
+            display: block;
+        
+            color: rgba(142,142,142,1);
+        
+            @include fontSize(1.2);
+            
+            line-height: 1.6em;
+        }
+    }
+
+    .idioma{
+        position: relative;
+        display: inline-block;
+        
+        color: rgba(142,142,142,1);
+    
+        font-weight: 400;
+        vertical-align: top;
+    
+        cursor: pointer;
+    
+    
+        &__texto{
+            position: static;
+
+            @include displayFlex(row, stretch, center, center);
+
+            vertical-align: baseline;
+
+            &-flag{
+                position: static;
+
+                @include displayFlex(column, stretch, flex-start, stretch);
+                margin-left: 0.5em;
+            }
+
+            &-config{
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+
+        &__icon{
+            position: relative;
+        
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        &__icon:not(:root){
+        
+            overflow: hidden;
+        }
+
+        &__opcoes{
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+            height: 100%;
+            width: 100%;
+        
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}
