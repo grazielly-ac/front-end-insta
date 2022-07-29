@@ -1,4 +1,4 @@
-.vscode
+*.vscode
 *.json
 *.~
 # Compiled source #
@@ -40,3 +40,4 @@ ehthumbs.db
 Thumbs.db
 
 node_modules
+dist
